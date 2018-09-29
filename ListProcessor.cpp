@@ -11,7 +11,6 @@
 
 int main()
 {
-	/*
 	List cows;
 	cout << "cows list:  " << endl << endl;
 
@@ -46,15 +45,6 @@ int main()
 	cout << "cows list:  " << cows << endl;
 	cout << "horses list:  " << horses << endl;
 	cout << "pigs list:  " << pigs << endl << endl;
-	*/
-
-	List newList;
-	newList.insertAtEnd(1.34);
-	cout << newList << endl;
-	newList.insertAtEnd(2.65);
-	cout << newList << endl;
-	newList.insertAsFirst(3.45);
-	cout << newList << endl;
 
 	cout << "End of code" << endl;
 
