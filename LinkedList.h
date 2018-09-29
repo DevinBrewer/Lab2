@@ -60,13 +60,16 @@ public:
 	int getSize() const;
 
 	// Uses recursion to gether the sum of the list
-double getSum() const;
+	double getSum() const;
 
 	//*** Mutators ***
 
 	// post: x has been added as the first double in this
 	//         List.
 	void insertAsFirst(double x);
+
+	// post: x has been added as the last double in the list
+	void insertAtEnd(double x);
 
 	// pre:  this List is not empty.
 	// post: the first double in this List has been removed

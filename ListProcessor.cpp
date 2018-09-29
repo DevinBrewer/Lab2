@@ -11,48 +11,50 @@
 
 int main()
 {
+	/*
 	List cows;
-	cout << "cows list:  " << cows << " Size: " << cows.getSum() << endl;
-	cout << endl;
+	cout << "cows list:  " << endl << endl;
 
 	cows.insertAsFirst(1.23);
 	cows.insertAsFirst(2.34);
-	cout << "cows list:  " << cows << " Size: " << cows.getSum() << endl;
-	cout << endl;
+	cout << "cows list:  " << cows << endl << endl;
 
 	cows.removeFirst();
-	cout << "cows list:  " << cows << " Size: " << cows.getSum() << endl;
-	cout << endl;
+	cout << "cows list:  " << cows << endl << endl;
 
 	List horses(cows);
-	cout << "cows list:  " << cows << " Size: " << cows.getSum() << endl;
-	cout << "horses list:  " << horses << " Size: " << horses.getSum() << endl;
-	cout << endl;
+	cout << "cows list:  " << cows << endl;
+	cout << "horses list:  " << horses << endl << endl;
 
 	horses.removeFirst();
 	horses.insertAsFirst(5.67);
 	cows.insertAsFirst(6.78);
-	cout << "cows list:  " << cows << " Size: " << cows.getSum() << endl;
-	cout << "horses list:  " << horses << " Size: " << horses.getSum() << endl;
-	cout << endl;
+	cout << "cows list:  " << cows << endl;
+	cout << "horses list:  " << horses << endl << endl;
 
 	List pigs;
-	cout << "cows list:  " << cows << " Size: " << cows.getSum()<< endl;
-	cout << "horses list:  " << horses << " Size: " << horses.getSum() << endl;
-	cout << "pigs list:  " << pigs << " Size: " << pigs.getSum() << endl;
-	cout << endl;
+	cout << "cows list:  " << cows << endl;
+	cout << "horses list:  " << horses  << endl;
+	cout << "pigs list:  " << pigs << endl << endl;
 
 	pigs = cows;
-	cout << "cows list:  " << cows << " Size: " << cows.getSum() << endl;
-	cout << "horses list:  " << horses << " Horses: " << horses.getSum() << endl;
-	cout << "pigs list:  " << pigs << " Size: " << pigs.getSum() << endl;
-	cout << endl;
+	cout << "cows list:  " << cows << endl;
+	cout << "horses list:  " << horses << endl;
+	cout << "pigs list:  " << pigs << endl << endl;
 
 	pigs = horses;
-	cout << "cows list:  " << cows << " Size: " << cows.getSum() << endl;
-	cout << "horses list:  " << horses << " Size: " << horses.getSum() << endl;
-	cout << "pigs list:  " << pigs << " Size: " << pigs.getSum() << endl;
-	cout << endl;
+	cout << "cows list:  " << cows << endl;
+	cout << "horses list:  " << horses << endl;
+	cout << "pigs list:  " << pigs << endl << endl;
+	*/
+
+	List newList;
+	newList.insertAtEnd(1.34);
+	cout << newList << endl;
+	newList.insertAtEnd(2.65);
+	cout << newList << endl;
+	newList.insertAsFirst(3.45);
+	cout << newList << endl;
 
 	cout << "End of code" << endl;
 

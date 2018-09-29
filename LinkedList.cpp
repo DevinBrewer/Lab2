@@ -43,7 +43,7 @@ const List & List::operator=(const List & other)
 }
 
 bool List::operator==(const List &rhs){
-    /*if(size() == 0 && rhs.size() == 0){return true;}//both empty
+		/*if(size() == 0 && rhs.size() == 0){return true;}//both empty
     if(size() != rhs.size()){return false;}//sizes not the same
 
     Node * lptr = this->next_;
@@ -124,6 +124,20 @@ double List::getSum() const {
 		ptr = ptr->next_;
 	}
 	return sum;
+}
+
+// *** insertAtEnd Fucntion ***
+void List::insertAtEnd(double x) {
+	if (first_ == NULL) {
+		insertAsFirst(x);
+	} else {
+		Node * newN = new Node(x);
+		Node * ptr = first_;
+		while (ptr->next_ != NULL) {
+			ptr = ptr->next_;
+		}
+		ptr->next_ = newN;
+	}
 }
 
 // Iterative version of clone.
