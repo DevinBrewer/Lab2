@@ -64,7 +64,6 @@ bool List::operator==(const List &rhs){
   	return true;
 }
 
-
 bool List::empty() const
 {
 	return first_ == NULL;
@@ -105,6 +104,16 @@ void List::print(ostream & outfile) const
 	outfile << " ]";
 }
 
+// *** Size functions ***
+int List::getSize() const {
+	int count = 0;	// Initialize a count
+	Node * ptr = first_;	// Set the ptr to the first position
+	while (ptr != NULL) {
+		count++;
+		ptr = ptr->next_;
+	}
+	return count;
+}
 
 // Iterative version of clone.
 // This version walks down the linked structure making a

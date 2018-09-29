@@ -56,6 +56,8 @@ public:
 	//         outfile.
 	void print(ostream & outfile) const;
 
+	// Uses recursion to gather the size of the list
+	int getSize() const;
 
 	//*** Mutators ***
 
@@ -71,7 +73,6 @@ public:
 private:
 	//*** Inaccessible standard functions ***
 
-
 	//*** Helper functions ***
 	// process part of the linked structure
 
@@ -79,10 +80,8 @@ private:
 	//         targeted by ptr has been returned.
 	static Node * clone(Node * ptr);
 
-
 private:
 	Node * first_;
-
 };
 
 
