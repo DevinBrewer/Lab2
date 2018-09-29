@@ -115,6 +115,17 @@ int List::getSize() const {
 	return count;
 }
 
+// *** Sum Function ***
+double List::getSum() const {
+	double sum = 0;	// Initialize a sum
+	Node * ptr = first_;
+	while (ptr != NULL) {
+		sum += ptr->entry_;
+		ptr = ptr->next_;
+	}
+	return sum;
+}
+
 // Iterative version of clone.
 // This version walks down the linked structure making a
 //   new Node for each double in the structure.

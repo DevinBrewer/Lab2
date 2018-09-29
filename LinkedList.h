@@ -59,6 +59,9 @@ public:
 	// Uses recursion to gather the size of the list
 	int getSize() const;
 
+	// Uses recursion to gether the sum of the list
+double getSum() const;
+
 	//*** Mutators ***
 
 	// post: x has been added as the first double in this
